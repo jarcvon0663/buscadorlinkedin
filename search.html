@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reclutador - Buscar Candidatos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="searchScript.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Buscar candidatos fácil</h1>
+    </header>
+
+    <button onclick="logout()">Cerrar Sesión</button>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Buscar candidatos con...">
+        <button onclick="performGoogleSearch()">Buscar</button>
+        <button onclick="clearSearch()">Borrar Búsqueda</button>
+    </div>
+
+    <div id="searchResults" class="results-container"></div>
+</body>
+</html>
